@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import {Card, Paper} from "@material-ui/core"
+import IncrementButton from './IncrementButton';
 
 const PrintAge = (props) => {
   return <span>Age: {age(props) } </span>
@@ -75,7 +76,13 @@ Person.defaultProps = {
 class App extends Component{
   render(){
     return ( 
-      <Person name="Mateusz" surname="Muśko" day={10} month={12} year={1999}/>
+      <div>
+        <h3>2nd Module Tasks</h3>
+        <Person name="Mateusz" surname="Muśko" day={10} month="january" year={1999}/>
+        <h3>3rd Module Tasks</h3>
+        <IncrementButton></IncrementButton>
+      </div>
+      
   )
   }
 }
