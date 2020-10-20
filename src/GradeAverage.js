@@ -9,9 +9,12 @@ const GradeAverage = props =>{
 
 return(
     <div>
-        {array.map((val,key)=>{
-            <p>val</p>
+        <ul>
+        {array.map((val)=>{
+           return (<li>{val}</li>)
         })}
+        </ul>
+    <span style={{color: "red"}}><span style={{color:"black"}}>Average: </span>{average}</span>    
     </div>
 );
 

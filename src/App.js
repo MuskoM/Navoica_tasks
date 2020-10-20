@@ -18,7 +18,7 @@ class App extends Component{
         <h3>PrintPerson</h3>
         <Person name="Ala" surname="Makota" year={1999}></Person>
         <h3>Grade Average</h3>
-        <GradeAverage array={[0,1,2,3,4,5]}></GradeAverage>
+        <GradeAverage array={[2,3,4.5,3.5,5]}></GradeAverage>
       </div>
       
   )
