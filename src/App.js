@@ -2,18 +2,23 @@ import React, { Component } from 'react';
 import IncrementButton from './IncrementButton';
 import ValidationComponent from './Validator';
 import Person from './Person'
+import GradeAverage from './GradeAverage';
 
 class App extends Component{
   render(){
     return ( 
       <div>
-        <h3>2nd Module Tasks</h3>
-        <Person name="Mateusz" surname="Muśko" day={10} month="january" year={1988}/>
-        <h3>3rd Module Tasks</h3>
-        <h4>IncrementButton</h4>
+        <h2>2nd Module Tasks</h2>
+        <Person name="Mateusz" surname="Muśko" month="february" year={1988}/>
+        <h2>3rd Module Tasks</h2>
+        <h3>IncrementButton</h3>
         <IncrementButton></IncrementButton>
-        <h4>Validator</h4>
+        <h3>Validator</h3>
         <ValidationComponent></ValidationComponent>
+        <h3>PrintPerson</h3>
+        <Person name="Ala" surname="Makota" year={1999}></Person>
+        <h3>Grade Average</h3>
+        <GradeAverage array={[0,1,2,3,4,5]}></GradeAverage>
       </div>
       
   )
